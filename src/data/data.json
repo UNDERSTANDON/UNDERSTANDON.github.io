@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": "kp-a14-99x",
+      "name": "Kinetic Air 14\"",
+      "category": "Laptops & Mobiles",
+      "price": 1299,
+      "description": "Unleash studio-grade performance on the go. M2 Ultra architecture.",
+      "image": "assets/images/kinetic-air-14.png",
+      "specs": {
+        "memory": "16GB Unified",
+        "storage": "512GB SSD",
+        "cpu": "M-Series Advanced"
+      },
+      "tag": "NEW RELEASE",
+      "rating": 4.5,
+      "reviews": 120,
+      "stock": 50,
+      "isActive": true
+    },
+    {
+      "id": "kp-twr-v4",
+      "name": "Precision Tower v4",
+      "category": "Workstations",
+      "price": 2450,
+      "description": "Infinite modularity for heavy computational loads.",
+      "image": "assets/images/precision-tower-v4.png",
+      "specs": {
+        "memory": "64GB ECC",
+        "storage": "2TB NVMe",
+        "cpu": "Threadripper Pro"
+      },
+      "tag": "",
+      "rating": 4.8,
+      "reviews": 85,
+      "stock": 15,
+      "isActive": true
+    },
+    {
+      "id": "kp-uv32-8k",
+      "name": "UltraVision 32\"",
+      "category": "Monitors",
+      "price": 899,
+      "description": "Reference-grade color accuracy for visual professionals.",
+      "image": "assets/images/ultravision-32.png",
+      "specs": {
+        "panel": "OLED Base",
+        "resolution": "8K",
+        "refresh_rate": "120Hz"
+      },
+      "tag": "",
+      "rating": 4.7,
+      "reviews": 230,
+      "stock": 110,
+      "isActive": true
+    },
+    {
+      "id": "kp-kb-apex",
+      "name": "Apex Mechanical Pro",
+      "category": "Peripherals",
+      "price": 189,
+      "description": "Low latency, high tactile response.",
+      "image": "assets/images/apex-mech.png",
+      "specs": {
+        "switches": "Tactile Blue",
+        "connectivity": "Wireless / Wired",
+        "layout": "Tenkeyless"
+      },
+      "tag": "",
+      "rating": 4.9,
+      "reviews": 310,
+      "stock": 40,
+      "isActive": true
+    },
+    {
+      "id": "kp-titan-x1",
+      "name": "Titan X-1 Studio Pro",
+      "category": "Workstations",
+      "price": 2499,
+      "description": "M2 Ultra architecture, 64GB ECC Memory, 2TB NVMe Gen5 storage. Engineered for extreme creative workflows.",
+      "image": "assets/images/titan-x1.png",
+      "specs": {
+        "memory": "64GB ECC",
+        "storage": "2TB NVMe",
+        "cpu": "Custom ASIC"
+      },
+      "tag": "",
+      "rating": 4.9,
+      "reviews": 48,
+      "stock": 8,
+      "isActive": true
+    },
+    {
+      "id": "kp-core-v3",
+      "name": "Core Fractal V3",
+      "category": "Workstations",
+      "price": 3150,
+      "description": "RTX 4090 integration, Phase-change cooling, custom modular chassis. The pinnacle of processing.",
+      "image": "assets/images/core-fractal.png",
+      "specs": {
+        "memory": "128GB DDR5",
+        "storage": "4TB NVMe Gen5",
+        "cpu": "i9-14900KS"
+      },
+      "tag": "LIMITED EDITION",
+      "rating": 5.0,
+      "reviews": 124,
+      "stock": 3,
+      "isActive": true
+    },
+    {
+      "id": "kp-nexus-8k",
+      "name": "Nexus 8K Vision",
+      "category": "Monitors",
+      "price": 1899,
+      "description": "99.9% Adobe RGB, 1600 nits peak brightness, architectural stand design. Color perfection redefined.",
+      "image": "assets/images/nexus-8k.png",
+      "specs": {
+        "panel": "Mini-LED",
+        "resolution": "8K",
+        "refresh_rate": "144Hz"
+      },
+      "tag": "",
+      "rating": 4.8,
+      "reviews": 92,
+      "stock": 25,
+      "isActive": true
+    },
+    {
+      "id": "kp-zenith-14",
+      "name": "Zenith Stealth 14",
+      "category": "Laptops & Mobiles",
+      "price": 1650,
+      "description": "Carbon fiber construction, 24-hour battery endurance, biometric encryption hardware. The ultimate traveler.",
+      "image": "assets/images/zenith-14.png",
+      "specs": {
+        "memory": "32GB LPDDR5x",
+        "storage": "1TB SSD",
+        "cpu": "Snapdragon X Elite"
+      },
+      "tag": "LOW STOCK",
+      "rating": 4.3,
+      "reviews": 215,
+      "stock": 5,
+      "isActive": true
+    }
+  ]
+}

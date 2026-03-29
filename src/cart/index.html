@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Kinetic Precision</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+
+    <!-- Header injected by main.js -->
+    <header id="site-header" class="site-header"></header>
+
+    <main class="container cart-container">
+        <div class="cart-header">
+            <h1 style="font-size: 2.5rem; letter-spacing: -1px;">Configuration Cart</h1>
+            <p style="color: var(--color-dark-muted);">Review and finalize your workspace infrastructure.</p>
+        </div>
+
+        <div class="cart-layout">
+            <div class="cart-items" id="cart-items-container">
+                <!-- Cart items rendered by cart.js -->
+                <p>Loading cart components...</p>
+            </div>
+
+            <div class="cart-summary">
+                <h3 style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); padding-bottom: 1rem;">Order Summary</h3>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Estimated Tax (10%)</span>
+                    <span id="summary-tax">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="summary-shipping">Calculated at checkout</span>
+                </div>
+                
+                <div class="summary-total" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid var(--color-border);">
+                    <span style="font-weight: 700; font-size: 1.25rem;">Total</span>
+                    <span id="summary-total" style="font-weight: 800; font-size: 1.5rem; color: var(--color-primary)">$0.00</span>
+                </div>
+
+                <button class="btn btn-primary" style="width: 100%; margin-top: 2rem; padding: 1rem;" onclick="checkout()">PROCEED TO SECURE CHECKOUT ➔</button>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;" onclick="clearCartUI()">CLEAR CONFIGURATION</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer injected by main.js -->
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

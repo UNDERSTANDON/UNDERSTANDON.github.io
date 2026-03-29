@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic Precision - High-Performance Computer Systems</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <!-- Header will be injected by main.js -->
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+        <!-- Home Page Header Section -->
+        <section class="hero-section container">
+            <div class="hero-content">
+                <span class="badge">2026 PERFORMANCE LINE</span>
+                <h1 class="hero-title">The Core of<br><span style="color: var(--color-primary)">Precision</span><br>Engineering.</h1>
+                <p class="hero-subtitle">Experience uncompromised workstation power. The new Kinetic Series laptops feature titanium-reinforced chassis and thermal-efficient architecture for professionals who demand zero throttling.</p>
+                <div class="hero-actions">
+                    <a href="#products-section" class="btn btn-primary">Explore Arrivals</a>
+                    <a href="#" class="btn btn-secondary" style="border-color: #cbd5e1; color: #475569">View Specs</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="../References/Home.png" style="width: 100%; border-radius: 12px; clip-path: inset(10% 2% 40% 50%); object-fit: cover;" alt="Precision Workstation" id="hero-laptop" />
+                <div class="hero-card">
+                    <h4>Quantum-X CPU</h4>
+                    <p>5.2GHz Max Turbo Frequency with 128GB Unified Memory support.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Rendering List -->
+        <section id="products-section" class="container" style="padding: 4rem 24px;">
+            <div style="display: flex; justify-content: space-between; align-items:flex-end; border-bottom: 2px solid var(--color-border); padding-bottom: 1rem; margin-bottom: 2rem;">
+                <div>
+                     <h2 style="font-size: 2rem; color: var(--color-dark); margin:0;">Curated Hardware</h2>
+                     <p style="color: var(--color-dark-muted); margin-top: 0.5rem;">Precision segments for every vertical of your workflow.</p>
+                </div>
+                <div style="color: var(--color-primary); font-weight: 600;">01 / Categories</div>
+            </div>
+            
+            <div class="product-grid" id="product-list-container">
+                <!-- Products dynamically rendered by home.js -->
+                 <p style="color: gray;">Booting hardware catalog...</p>
+            </div>
+        </section>
+        
+        <!-- Showcase Section from references -->
+        <section class="showcase-section">
+            <div class="container" style="position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <h2 style="font-size: 3rem; color: white;">Built for the<br><span style="color: var(--color-secondary);">Infinite Grind.</span></h2>
+                <p style="color: #cbd5e1; max-width: 500px; font-size: 1.1rem; margin: 1.5rem 0 2rem;">Our systems undergo 400 hours of stress testing before they leave our factory. Every joint, every capacitor, and every thermal pad is selected for industrial-grade longevity.</p>
+                <div style="display: flex; gap: 2rem; align-items: center;">
+                    <a href="#" class="btn btn-primary" style="background-color: var(--color-secondary); color: var(--color-dark); font-weight: 700;">Build Your Custom Spec</a>
+                    <div style="color: white; line-height: 1.2;">
+                        <strong>3 Years</strong><br><span style="font-size: 0.75rem; opacity: 0.7;">GLOBAL WARRANTY</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer will be injected by main.js -->
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Inline or separate page script for Home -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Need a tiny delay just to make sure initDataStorage is fetched if first load
+            setTimeout(() => {
+                const p = DataService.getProducts();
+                renderProducts(p);
+            }, 100);
+        });
+
+        function renderProducts(products) {
+            const container = document.getElementById('product-list-container');
+            if(!container) return;
+
+            // Only show active products for normal view
+            const displayProducts = products.filter(p => p.isActive);
+
+            if(displayProducts.length === 0) {
+                container.innerHTML = '<p>No hardware available matching specifications.</p>';
+                return;
+            }
+
+            container.innerHTML = displayProducts.map(p => `
+                <div class="product-card">
+                    ${p.tag ? '<span class="product-badge ' + (p.tag.includes("LOW") ? "danger" : "") + '">' + p.tag + '</span>' : ''}
+                    <div class="product-img-wrapper">
+                        <!-- We use dynamic images if available, fallback to a solid color block for prototype -->
+                        <div style="width: 100%; height: 100%; background: #f1f5f9; display: flex; align-items: center; justify-content: center; color: #cbd5e1; border-radius: 8px;">
+                            IMAGE PREVIEW
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-header">
+                            <h3 class="product-title" title="${p.name}">${p.name}</h3>
+                            <div class="product-price">$${p.price.toLocaleString()}</div>
+                        </div>
+                        <p class="product-sku" style="font-size:0.75rem; color:var(--color-dark-muted); margin-bottom:0.5rem;">SKU: ${p.id.toUpperCase()}</p>
+                        <p class="product-desc">${p.description.substring(0, 80)}...</p>
+                        
+                        <!-- Actions -->
+                        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                            <button class="btn btn-primary" style="width: 100%;" onclick="addToCart('${p.id}')">Add to Configuration</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function addToCart(pid) {
+            DataService.addToCart(pid, 1);
+            alert('Added to your workspace configuration.');
+        }
+    </script>
+</body>
+</html>

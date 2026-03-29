@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Kinetic Precision</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body class="auth-body">
+
+    <!-- A simplified header if needed or just the split screen -->
+    <div class="auth-container shadow-lg">
+        <div class="auth-banner">
+            <h2>Kinetic Precision</h2>
+            <p>The definitive framework for high-performance computer sales and inventory management.</p>
+            <div class="system-status">
+                <span class="status-indicator"></span> SYSTEM STATUS: ACTIVE
+            </div>
+        </div>
+        <div class="auth-form-wrapper">
+            <h1 class="auth-title">Welcome Back</h1>
+            <p class="auth-subtitle">Access your workstation dashboard to manage inventory and sales.</p>
+            
+            <form id="login-form" class="auth-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">TERMINAL ID / EMAIL</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">@</span>
+                        <input type="email" id="email" placeholder="name@kinetic-precision.com" required>
+                    </div>
+                    <span class="error-text" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <div style="display: flex; justify-content: space-between; width: 100%;">
+                        <label for="password">ACCESS KEY</label>
+                        <a href="#" style="font-size: 0.75rem; font-weight: 600;">Forgot key?</a>
+                    </div>
+                    <div class="input-wrapper">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    <span class="error-text" id="password-error"></span>
+                </div>
+
+                <div class="form-options">
+                    <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: var(--color-dark-muted); cursor: pointer;">
+                        <input type="checkbox" id="remember">
+                        Remember this station
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary auth-submit">INITIALIZE SESSION ➔</button>
+            </form>
+
+            <div class="auth-footer">
+                New to the framework? <a href="register.html" class="btn btn-secondary" style="margin-left: 1rem; padding: 0.4rem 1rem;">CREATE ACCOUNT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

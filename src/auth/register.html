@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Kinetic Precision</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-container shadow-lg">
+        <div class="auth-form-wrapper">
+            <h1 class="auth-title">Initialize Terminal</h1>
+            <p class="auth-subtitle">Create a secure profile to deploy and manage high-performance compute arrays.</p>
+            
+            <form id="register-form" class="auth-form" onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label for="name">OPERATOR NAME</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <span class="error-text" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">TERMINAL ID / EMAIL</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder="name@kinetic-precision.com" required>
+                    </div>
+                    <span class="error-text" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">ACCESS KEY</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    <span class="error-text" id="password-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">VERIFY ACCESS KEY</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="confirm-password" placeholder="••••••••" required>
+                    </div>
+                    <span class="error-text" id="confirm-password-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary auth-submit">ALLOCATE PROFILE ➔</button>
+            </form>
+
+            <div class="auth-footer">
+                Terminal already active? <a href="login.html" class="btn btn-secondary" style="margin-left: 1rem; padding: 0.4rem 1rem;">LOGIN SESSION</a>
+            </div>
+        </div>
+        
+        <div class="auth-banner" style="background: linear-gradient(135deg, #020617 0%, #0c4a6e 100%);">
+            <h2>Kinetic Precision</h2>
+            <p>Access specialized hardware tailored for zero-latency requirements and critical workflow computation.</p>
+            <div class="system-status">
+                <span class="status-indicator"></span> NETWORK UPLINK: VERIFIED
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

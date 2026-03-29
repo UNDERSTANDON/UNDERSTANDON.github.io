@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kinetic Precision</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+
+    <!-- Header injected by main.js -->
+    <header id="site-header" class="site-header"></header>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-info">
+                <h1>Support Protocol</h1>
+                <p>Need assistance with your configuration or a deployment issue? Our engineers are available 24/7 to ensure zero downtime.</p>
+                
+                <div class="info-block">
+                    <h3>Direct Communications</h3>
+                    <p>contact@kinetic-precision.com</p>
+                </div>
+                
+                <div class="info-block">
+                    <h3>Enterprise Deployments</h3>
+                    <p>enterprise@kinetic-precision.com</p>
+                </div>
+                
+                <div class="info-block">
+                    <h3>Global Headquarters</h3>
+                    <p>One Kinetic Way<br>Silicon Valley, CA 94025</p>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" onsubmit="handleContact(event)">
+                    <h2>Initialize Request</h2>
+                    
+                    <div class="form-group">
+                        <label for="c-name">OPERATOR NAME</label>
+                        <input type="text" id="c-name" class="c-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c-email">TERMINAL ID / EMAIL</label>
+                        <input type="email" id="c-email" class="c-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c-subject">DIAGNOSTIC TAG (SUBJECT)</label>
+                        <input type="text" id="c-subject" class="c-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c-message">DETAILED REPORT</label>
+                        <textarea id="c-message" class="c-input" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">TRANSMIT LOG ➔</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer injected by main.js -->
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function handleContact(e) {
+            e.preventDefault();
+            alert('Transmission Success.\n\nA Kinetic engineer has received your report and will respond within 4.0 hours standard SLA.');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>

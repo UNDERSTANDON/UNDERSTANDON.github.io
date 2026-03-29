@@ -1,0 +1,129 @@
+.cart-container {
+    padding: 4rem 24px;
+}
+
+.cart-header {
+    margin-bottom: 3rem;
+}
+
+.cart-layout {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.cart-items {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cart-item {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    align-items: center;
+}
+
+.cart-item-img {
+    width: 120px;
+    height: 120px;
+    background-color: #f1f5f9;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cbd5e1;
+    font-size: 0.75rem;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-dark);
+}
+
+.cart-item-tag {
+    font-size: 0.75rem;
+    color: var(--color-dark-muted);
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-border);
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background: #f1f5f9;
+}
+
+.qty-input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+}
+
+.cart-item-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    min-width: 100px;
+    text-align: right;
+}
+
+.remove-btn {
+    color: var(--color-danger);
+    background: transparent;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.remove-btn:hover {
+    text-decoration: underline;
+}
+
+/* Summary Box */
+.cart-summary {
+    flex: 1;
+    background: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    position: sticky;
+    top: 100px;
+    box-shadow: var(--shadow-md);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: var(--color-dark-muted);
+}
