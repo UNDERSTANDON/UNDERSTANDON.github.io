@@ -1,0 +1,21 @@
+MSI GeForce RTX 3050 Ventus 2X 6G OC
+
+
+Graphics Coprocessor: NVIDIA GeForce RTX 3050
+Brand: msi
+Graphics Ram Size: 6 GB
+GPU Clock Speed: 1.49 GHz
+Video Output Interface: PCI Express
+
+<h1>About this item</h1>
++ Core/Memory
++ Boost Clock: 1492 MHz
++ Memory: 6GB GDDR6
++ Memory Interface: 192-bit
++ DisplayPort x 3 (v1.4a)
++ HDMI x 1 (Supports 4K @ 120Hz as specified in HDMI 2.1)
++ Dual Fan Thermal Design
++ TORX Fan 3.0
++ Zero Frozr technology
++ Afterburner Overclocking Utility
++ MSI Afterburner is the world's most recognized and widely used graphics card overclocking utility.

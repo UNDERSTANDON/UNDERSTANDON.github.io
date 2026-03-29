@@ -1,0 +1,195 @@
+/* Product Detail Page Specific CSS */
+
+.detail-container {
+    padding: 3rem 24px 6rem 24px;
+}
+
+.d-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-bottom: 6rem;
+}
+
+.main-image-wrapper {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    box-shadow: var(--shadow-sm);
+}
+
+.main-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--radius-sm);
+    object-fit: contain;
+}
+
+.d-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-breadcrumbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.d-rating {
+    color: #00D3E0; /* Cyan star color */
+    font-size: 0.875rem;
+}
+
+.d-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+}
+
+.d-desc {
+    color: var(--color-dark-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.d-price-block {
+    margin-bottom: 2rem;
+}
+
+.d-price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.d-tag {
+    background-color: #e2e8f0;
+    color: #475569;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+}
+
+.d-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.d-btn-cart {
+    flex: 1;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    font-size: 1rem;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.d-btn-cart:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.d-btn-buy {
+    flex: 1;
+    background-color: #00D3E0;
+    color: var(--color-dark);
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1rem;
+    border: 2px solid #00D3E0;
+}
+
+.d-btn-buy:hover {
+    background-color: #00b8c4;
+    border-color: #00b8c4;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.d-logistics {
+    background-color: #f8fafc;
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.l-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* Specs Section */
+.d-specs-section {
+    margin-bottom: 5rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.spec-card {
+    background: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.spec-title {
+    font-size: 0.75rem;
+    color: var(--color-dark-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.spec-val {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+/* Reviews */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.review-card {
+    background: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+}

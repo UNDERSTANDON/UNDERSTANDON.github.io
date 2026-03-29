@@ -1,0 +1,29 @@
+Alto Keys K98M is a wireless mechanical keyboard with UniCushion gasket that absorbs vibration to enhance the rich, satisfying sound of each keystroke while delivering exceptional comfort. With premium materials, unique design, and customization, it transforms your workspace into a place of tactile and auditory inspiration.
+
+<h1>Dimensions</h1>
+
+Height: 5.79 in (147 mm)
+Width: 15.79 in (401 mm)
+Depth: 1.56 in (39.6 mm)
+Weight: 38.8 oz (1100 g)
+
+<h1>Technical Specifications</h1>
+
+<h1>General Specifications</h1>
++ Easy-switch: Connect up to 3 devices and switch between them
++ Backlighting: Yes, white color
++ Total number of keys: 98
++ Special Keys: 3 actions keys for customization (AI feature, etc)
+
+<h1>Battery & Charging</h1>
++ Battery life: Rechargeable, 12 months of wireless use (backlighting turned off)
+
+<h1>System Requirements</h1>
++ Requirements: Bluetooth Low Energy; USB-A port; Windows* 10, 11 or later; macOS* 11 or later; Linux*; ChromeOS*; iPadOS* 14 or later; iOS* 14 or later; Android* 9.0 or later
++ Bluetooth: Yes
++ Logi Bolt USB receiver: Yes
++ Customization app: Supported by Logi Options+ on Windows and macOS only.
++ Important: *1) Customize device by installing the Logi Options+App available for recent versions of Windows and macOS at app.logi.com. 2) Logi Options+App is currently not supported. The device’s basic functions will work without it.
+
+<h1>Warranty Information</h1>
++ 1-Year Limited Hardware Warranty

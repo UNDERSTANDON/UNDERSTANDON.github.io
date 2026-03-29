@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Kinetic Precision</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+
+    <!-- Header injected by main.js -->
+    <header id="site-header" class="site-header"></header>
+
+    <main class="container detail-container">
+        
+        <!-- Top Identity Section -->
+        <section class="d-hero">
+            <div class="d-gallery">
+                <!-- Fallback or dynamic image wrapper -->
+                <div class="main-image-wrapper">
+                    <img id="d-main-image" src="" alt="Product view" class="main-img" onerror="this.src='https://placehold.co/800x600/f1f5f9/94a3b8?text=Image+Unavailable';">
+                </div>
+            </div>
+
+            <div class="d-info">
+                <div class="d-breadcrumbs">
+                    <span id="d-sku" style="font-size: 0.75rem; color: var(--color-dark-muted); font-weight: 700;">SKU: LOADING...</span>
+                    <!-- Static 4.8 star mock rating for visual representation per spec -->
+                    <span class="d-rating">★★★★★ <span id="d-reviews-count" style="color: var(--color-dark-muted); font-weight: normal; font-size: 0.75rem;">(48 Reviews)</span></span>
+                </div>
+                
+                <h1 id="d-title" class="d-title">Loading Parameters...</h1>
+                <p id="d-desc" class="d-desc">Accessing hardware database to pull configuration metrics...</p>
+                
+                <div class="d-price-block">
+                    <div style="font-size: 0.75rem; color: var(--color-dark-muted); font-weight: 700; letter-spacing: 1px; margin-bottom: 0.25rem;">BASE CONFIGURATION PRICE</div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span id="d-price" class="d-price">$0.00</span>
+                        <span id="d-tag" class="d-tag" style="display:none;"></span>
+                    </div>
+                </div>
+
+                <div class="d-actions">
+                    <!-- Standard Cart button linked to JS function -->
+                    <button class="btn btn-secondary d-btn-cart" onclick="addCurrentToCart()">
+                        <span style="font-size: 1.2rem;">🛒</span> Add to Cart
+                    </button>
+                    <!-- Buy Now initiates fake checkout directly -->
+                    <button class="btn btn-primary d-btn-buy" onclick="buyNow()">Buy Now</button>
+                </div>
+
+                <div class="d-logistics">
+                    <div class="l-item">
+                        <span style="font-size: 1.25rem; color: var(--color-primary);">🚚</span>
+                        <div>
+                            <strong>Express Shipping</strong>
+                            <p style="font-size: 0.8rem; color: var(--color-dark-muted); margin: 0;">Arrives within 3-5 business days.</p>
+                        </div>
+                    </div>
+                    <div class="l-item">
+                        <span style="font-size: 1.25rem; color: var(--color-primary);">🛡️</span>
+                        <div>
+                            <strong>3-Year Warranty</strong>
+                            <p style="font-size: 0.8rem; color: var(--color-dark-muted); margin: 0;">Full hardware coverage and priority support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specs Section -->
+        <section class="d-specs-section">
+            <h2 class="section-title">Technical Specs</h2>
+            
+            <div class="specs-grid" id="d-specs-container">
+                <!-- Dynamically populated from JS object payload -->
+            </div>
+        </section>
+
+        <!-- Fake Reviews Section for Visuals -->
+        <section class="d-reviews-section">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--color-border); padding-bottom: 1rem; margin-bottom: 2rem;">
+                <div>
+                    <h2 class="section-title" style="margin-bottom: 0;">Precision Feedback</h2>
+                    <p style="color: var(--color-dark-muted); font-size: 0.95rem;">Real insights from professional users.</p>
+                </div>
+                <a href="#" style="font-weight: 700; font-size: 0.875rem;">Write a Review ✎</a>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                        <div style="display:flex; gap: 1rem; align-items:center;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: #0f3b8c; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">MC</div>
+                            <div>
+                                <h4 style="margin:0; font-size: 0.9rem;">Marcus Chen</h4>
+                                <div style="font-size: 0.75rem; color: var(--color-dark-muted);">SENIOR ARCHITECT</div>
+                            </div>
+                        </div>
+                        <div style="color: #00D3E0; font-size: 0.75rem;">★★★★★</div>
+                    </div>
+                    <h4 style="color: var(--color-primary); margin: 1rem 0;">"Absolute sustained performance."</h4>
+                    <p style="font-size: 0.875rem; color: var(--color-dark-muted); line-height: 1.6;">I use this for complex Lumion renders and Revit modeling. Unlike my previous workstations, this doesn't throttle during 12-hour render sessions. The build quality is exceptional—feels like a piece of industrial art on my desk.</p>
+                </div>
+                
+                <div class="review-card">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                         <div style="display:flex; gap: 1rem; align-items:center;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: #10B981; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">ER</div>
+                            <div>
+                                <h4 style="margin:0; font-size: 0.9rem;">Elena Rodriguez</h4>
+                                <div style="font-size: 0.75rem; color: var(--color-dark-muted);">AI RESEARCHER</div>
+                            </div>
+                        </div>
+                        <div style="color: #00D3E0; font-size: 0.75rem;">★★★★☆</div>
+                    </div>
+                    <h4 style="color: var(--color-primary); margin: 1rem 0;">"The compute performance is unmatched."</h4>
+                    <p style="font-size: 0.875rem; color: var(--color-dark-muted); line-height: 1.6;">Training local LLMs requires immense VRAM and fast throughput. Deducting one star only because the delivery was delayed by two days, but the machine itself is a beast.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer injected by main.js -->
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <!-- Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/detail.js"></script>
+</body>
+</html>

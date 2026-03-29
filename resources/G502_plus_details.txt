@@ -1,0 +1,39 @@
+G502 X PLUS is the latest addition to legendary G502 lineage. Reinvented with our first-ever LIGHTFORCE hybrid switches, LIGHTSPEED pro-grade wireless, LIGHTSYNC RGB, HERO 25K sensor, and more.
+
+<h1>Dimensions</h1>
+
++ Height: 1.62 in (41.1 mm)
++ Width: 3.12 in (79.2 mm)
++ Length: 5.17 in (131.4 mm)
++ Weight: 3.74 oz (106 g)
+
+<h1>Technical Specifications</h1>
+
+<h2>General Specifications</h2>
++ Onboard memory: Up to 5 *Two profiles by default, five by using Logitech G HUB Software available for download at logitechg.com/ghub
++ USB-C Charging: Yes
++ LIGHTWEIGHT: 106 grams
++ LIGHTSPEED wireless technology: Yes
++ Programmable controls: 13
++ RGB lighting: 8-zone
++ Charging port: USB-C
+
+<h1>Tracking</h1>
++ Sensor: HERO 25K
++ Resolution - Tracking: 100 – 25,600 DPI
++ Max. acceleration: >40G
++ Max. speed: >400 IPS *Tested on Logitech G240 Gaming Mouse Pad
++ Zero smoothing/acceleration/filtering: Yes
+
+<h1>Durability</h1>
++ PTFE Feet: Low-friction
+
+<h1>Battery</h1>
++ Constant motion: 130 hrs (37 hrs RGB on) *Battery life may vary based on user and computing conditions
+
+<h1>System Requirements</h1>
++ Requirements: USB port Internet access for optional software download
++ Platform Compatibility: Windows® 10 or later Mac 10.14 or later
+
+<h1>Warranty Information</h1>
++ 2-Year Limited Hardware Warranty
