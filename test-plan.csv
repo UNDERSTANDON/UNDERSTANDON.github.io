@@ -1,0 +1,61 @@
+Test ID,Test Name,Page,Test Type,Test Steps,Expected Result,Priority,Status
+TC-001,Home Page Loads,Home,Functional,Load index.html in browser,Page loads without errors and displays product list,High,Not Started
+TC-002,Navigation to Login Page,Home,Functional,Click Login link in header,Redirects to auth/login.html successfully,High,Not Started
+TC-003,Navigation to Register Page,Home,Functional,Click Register link in header,Redirects to auth/register.html successfully,High,Not Started
+TC-004,Navigation to Cart Page,Home,Functional,Click Cart icon/link in header,Redirects to cart/index.html successfully,High,Not Started
+TC-005,Navigation to Profile Page,Home,Functional,Click Profile link in header,Redirects to profile/index.html successfully,High,Not Started
+TC-006,Navigation to Contact Page,Home,Functional,Click Contact link in footer,Redirects to contact/index.html successfully,High,Not Started
+TC-007,Product List Display,Home,Functional,View home page with loaded data,All products display with name price and image,High,Not Started
+TC-008,Click Product to View Details,Home,Functional,Click on a product from the list,Navigates to detail/index.html with correct product info,High,Not Started
+TC-009,Home Page Responsive Design,Home,UI/UX,Resize browser to mobile screen,Page layout adjusts properly for mobile view,Medium,Not Started
+TC-010,Home Page Responsive Desktop,Home,UI/UX,View on desktop resolution,All elements properly aligned and visible,Medium,Not Started
+TC-011,Login Page Load,Login,Functional,Navigate to auth/login.html,Page loads with login form,High,Not Started
+TC-012,Email Field Validation Empty,Login,Validation,Submit form with empty email,Error message displayed for required email field,High,Not Started
+TC-013,Email Format Validation Invalid,Login,Validation,Enter invalid email format (e.g. test@),Error message displayed for invalid email format,High,Not Started
+TC-014,Email Format Validation Valid,Login,Validation,Enter valid email format (e.g. test@example.com),No error message for email field,High,Not Started
+TC-015,Password Field Empty Validation,Login,Validation,Submit form with empty password,Error message displayed for required password field,High,Not Started
+TC-016,Password Length Validation,Login,Validation,Enter password less than 6 characters,Error message displayed for minimum length requirement,High,Not Started
+TC-017,Login Successful,Login,Functional,Enter valid email and password then submit,User logged in and redirected to home or profile page,High,Not Started
+TC-018,Login Stores User Session,Login,Functional,Login successfully and check localStorage,User token/session stored in localStorage,High,Not Started
+TC-019,Login Form Clear Button,Login,Functional,Enter data then click clear/reset button,Form fields are cleared,Medium,Not Started
+TC-020,Login Page Responsive,Login,UI/UX,View login form on mobile and desktop,Form displays properly on both screen sizes,Medium,Not Started
+TC-021,Register Page Load,Register,Functional,Navigate to auth/register.html,Page loads with registration form,High,Not Started
+TC-022,Register Empty Name Field,Register,Validation,Submit form with empty name,Error message displayed for required name field,High,Not Started
+TC-023,Register Empty Email Field,Register,Validation,Submit form with empty email,Error message displayed for required email field,High,Not Started
+TC-024,Register Invalid Email Format,Register,Validation,Enter invalid email in register form,Error message displayed for invalid email format,High,Not Started
+TC-025,Register Empty Password Field,Register,Validation,Submit form with empty password,Error message displayed for required password field,High,Not Started
+TC-026,Register Password Too Short,Register,Validation,Enter password less than 6 characters,Error message displayed for minimum length requirement,High,Not Started
+TC-027,Register Password Mismatch,Register,Validation,Enter different values in password and confirm password,Error message displayed for password mismatch,High,Not Started
+TC-028,Register Successful,Register,Functional,Fill all fields correctly and submit,New user registered and redirected to login page,High,Not Started
+TC-029,Register Duplicate Email Check,Register,Validation,Register with already existing email,Error message indicates email already registered,High,Not Started
+TC-030,Register User Data Stored,Register,Functional,Complete registration successfully,New user data stored in localStorage or data.json,High,Not Started
+TC-031,Product Detail Page Load,Detail,Functional,Click on a product from home,Detail page loads with correct product information,High,Not Started
+TC-032,Product Detail Display Info,Detail,Functional,View product detail page,Product name price description and specs display,High,Not Started
+TC-033,Product Image Display,Detail,Functional,View product detail page,Product image displays correctly,Medium,Not Started
+TC-034,Add to Cart Button,Detail,Functional,Click Add to Cart button on detail page,Item added to cart and confirmation shown,High,Not Started
+TC-035,Quantity Selection,Detail,Functional,Modify quantity selector on detail page,Quantity value changes as expected,Medium,Not Started
+TC-036,Add Multiple Items to Cart,Detail,Functional,Adjust quantity to 5 then click Add to Cart,Cart receives 5 items of the product,Medium,Not Started
+TC-037,Back to Home Navigation,Detail,Functional,Click home or back link from detail page,Returns to home page successfully,Medium,Not Started
+TC-038,Product Detail Responsive,Detail,UI/UX,View detail page on mobile and desktop,Layout adjusts properly for different screen sizes,Medium,Not Started
+TC-039,Cart Page Load,Cart,Functional,Navigate to cart/index.html,Cart page loads and displays items,High,Not Started
+TC-040,Empty Cart Display,Cart,Functional,View cart with no items,Empty cart message displayed,High,Not Started
+TC-041,Cart Shows Added Items,Cart,Functional,Add items to cart then view cart page,All added items display in cart,High,Not Started
+TC-042,Cart Display Item Details,Cart,Functional,View cart with items,Each item shows name price quantity and total,High,Not Started
+TC-043,Update Quantity in Cart,Cart,Functional,Change item quantity in cart,Cart total price updates automatically,High,Not Started
+TC-044,Remove Item from Cart,Cart,Functional,Click remove button on cart item,Item removed from cart and total updated,High,Not Started
+TC-045,Clear Entire Cart,Cart,Functional,Click clear/empty cart button,All items removed from cart,Medium,Not Started
+TC-046,Calculate Cart Subtotal,Cart,Functional,View cart with multiple items,Subtotal calculated correctly for all items,High,Not Started
+TC-047,Apply Discount Code,Cart,Functional,Enter valid discount code if applicable,Discount applied and price updated,Medium,Not Started
+TC-048,Checkout Process,Cart,Functional,Click proceed to checkout from cart,Checkout page or confirmation displayed,High,Not Started
+TC-049,Cart Persists on Refresh,Cart,Functional,Add items to cart then refresh page,Cart items remain after page refresh,High,Not Started
+TC-050,Cart Responsive Design,Cart,UI/UX,View cart on mobile and desktop,Cart layout responsive on all screen sizes,Medium,Not Started
+TC-051,Profile Page Load Logged In,Profile,Functional,Navigate to profile page while logged in,Profile page loads with user information,High,Not Started
+TC-052,Profile Page Not Logged In,Profile,Functional,Navigate to profile without login,Redirects to login page or shows login prompt,High,Not Started
+TC-053,Display User Information,Profile,Functional,View profile page,User name email and other info display correctly,High,Not Started
+TC-054,Edit Profile Information,Profile,Functional,Click edit button and modify user info,Changes saved and reflected on page,Medium,Not Started
+TC-055,Update Password from Profile,Profile,Functional,Change password from profile page,New password saves and next login uses new password,High,Not Started
+TC-056,View Order History,Profile,Functional,View order history section on profile,All past orders display with details,Medium,Not Started
+TC-057,Logout Function,Profile,Functional,Click logout button on profile page,User logged out and redirected to home,High,Not Started
+TC-058,Profile Responsive Design,Profile,UI/UX,View profile on mobile and desktop,Profile layout is responsive,Medium,Not Started
+TC-059,Contact Form Load,Contact,Functional,Navigate to contact/index.html,Contact form loads with input fields,High,Not Started
+TC-060,Contact Form Fields Validation,Contact,Validation,Submit contact form with empty required fields,Error messages displayed for all empty fields,High,Not Started

@@ -77,8 +77,8 @@ const DataService = {
         if (item) {
             item.quantity = quantity;
             if(item.quantity <= 0) {
-               DataService.removeFromCart(productId);
-               return;
+                DataService.removeFromCart(productId);
+                return;
             }
             localStorage.setItem('kp_cart', JSON.stringify(cart));
             if(typeof updateMainNavUI === 'function') updateMainNavUI();
